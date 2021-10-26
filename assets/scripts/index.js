@@ -240,6 +240,16 @@
         var _blocks_owner_workflow_owner_workflow_js__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(20);
         /* harmony import */
         var _blocks_owner_workflow_owner_workflow_js__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/ __webpack_require__.n(_blocks_owner_workflow_owner_workflow_js__WEBPACK_IMPORTED_MODULE_19__);
+        /* harmony import */
+        var _blocks_metro_popup_metro_popup_js__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(21);
+        /* harmony import */
+        var _blocks_metro_popup_metro_popup_js__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/ __webpack_require__.n(_blocks_metro_popup_metro_popup_js__WEBPACK_IMPORTED_MODULE_20__);
+        /* harmony import */
+        var _blocks_map_list_map_list_js__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(22);
+        /* harmony import */
+        var _blocks_map_list_map_list_js__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/ __webpack_require__.n(_blocks_map_list_map_list_js__WEBPACK_IMPORTED_MODULE_21__);
+
+
 
 
 
@@ -634,7 +644,7 @@
     /***/
     (function(module, exports) {
 
-        $(function() {
+        jQuery(document).ready(function($) {
             $('.favorites__list').jScrollPane({
                 resizeSensor: true
             });
@@ -650,7 +660,7 @@
     /***/
     (function(module, exports) {
 
-        $(function() {
+        jQuery(document).ready(function($) {
             $('.geo-btn').on('click', function() {
                 $('.geo-popup').css('display', 'flex');
             });
@@ -670,10 +680,49 @@
     /***/
     (function(module, exports) {
 
-        $(function() {
+        jQuery(document).ready(function($) {
             $('.owner-workflow__item').on('click', function() {
                 $(this).next().find('.owner-workflow__sep').toggleClass('owner-workflow__sep--big');
                 $(this).next().find('.owner-workflow__sublist').toggle();
+            });
+        });
+
+        /***/
+    }),
+    /* 21 */
+    /***/
+    (function(module, exports) {
+
+        jQuery(document).ready(function($) {
+            $('.metro-btn').on('click', function() {
+                $('.metro-popup').show();
+            });
+            $('.metro-popup__close').on('click', function() {
+                $('.metro-popup').hide();
+            });
+            $('.metro-popup').on('click', function() {
+                $(this).hide();
+            }).on('click', '.metro-popup__container', function(e) {
+                e.stopPropagation();
+            });
+        });
+
+        /***/
+    }),
+    /* 22 */
+    /***/
+    (function(module, exports) {
+
+        jQuery(document).ready(function($) {
+            $('.map-list').jScrollPane({
+                resizeSensor: true
+            });
+            $('.map-list').hide();
+            $('.list-btn').on('click', function() {
+                $('.map-list').css('display', 'flex');
+            });
+            $('.map-list__close').on('click', function() {
+                $('.map-list').hide();
             });
         });
 

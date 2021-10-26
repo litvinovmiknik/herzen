@@ -13,7 +13,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles/libs/jquery.jscrollpane.css">
-    <link rel="stylesheet" href="assets/styles/libs/jquery.bxslider.min.css">
     <link rel="stylesheet" href="assets/styles/index.css">
 </head>
 
@@ -152,98 +151,140 @@
         </div>
     </header>
     <main class="main">
-        <div class="rent">
-            <div class="rent-about">
-                <h1 class="rent-about__title">Арендаторам</h1>
-                <div class="rent-about__list">
-                    <div class="rent-about__container">
-                        <h3 class="rent-about__name">Наша команда оказывает услуги для профессиональных арендаторов с 2011 года</h3>
-                        <div class="rent-about__text">Обеспечиваем арендаторов недвижимости высокий уровнем заполняемости площадей. Среди наших инструментов: широкая рекламная сеть на топовых площадках интернета, собственная клиентская база из нескольких тысяч федеральных сетей, оптовых и производственных компаний.</div><img class="rent-about__img" src="assets/images/rent-about.png" alt="" />
+        <div class="map">
+            <div class="map__container">
+                <div class="map__row">
+                    <form class="map__search" action="" method="post"><input class="map__search-input" type="text" placeholder="Введите город, адрес, метро, название СК..." /><button class="map__search-btn"><img class="map__search-icon" src="assets/images/search.png" alt="" /></button></form>
+                    <div class="map__checkboxes">
+                        <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="station-1" id="station-1" checked="checked" /><label class="checkbox-btn__label" for="station-1">Все станции внутри кольца</label></div>
+                        <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="station-2" id="station-2" /><label class="checkbox-btn__label" for="station-2">Все станции кольцевой</label></div>
+                        <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="station-3" id="station-3" /><label class="checkbox-btn__label" for="station-3">Менее 15 мин. пешком </label></div>
+                        <div class="checkbox-btn checkbox-crossing"><input class="checkbox-btn__input" type="checkbox" name="station-4" id="station-4" /><label class="checkbox-btn__label" for="station-4"><img src="assets/images/crossing.png" alt="" /></label></div>
                     </div>
                 </div>
-            </div>
-            <div class="rent-service">
-                <div class="rent-service__container">
-                    <h2 class="h2 rent-service__title">На сегодняшний день мы оказываем:</h2>
-                    <div class="rent-service__list">
-                        <div class="rent-service__item">
-                            <div class="rent-service__name">Индивидуальные брокерские услуги</div>
-                            <div class="rent-service__text">Вы упускаете часть рынка, если не экспонируете объект через Herzen.<br>Наша база насчитывает более 11 000 компаний арендаторов.<br>Каждый месяц мы получаем более 200-та новых обращений.</div>
+                <div class="map__map">
+                    <div class="map-list">
+                        <div class="map-list__row">
+                            <div class="map-list__title">Объявления (<span class="map-list__count">5</span>)</div><img class="map-list__close" src="assets/images/plus.png" alt="" />
                         </div>
-                        <div class="rent-service__item">
-                            <div class="rent-service__name">Агентские брокерские услуги</div>
-                            <div class="rent-service__text">Аналитика играет важную роль в наилучшем подборе арендаторов и покупателей для вашей недвижмости</div>
-                        </div>
-                        <div class="rent-service__item">
-                            <div class="rent-service__name">Аналитика и исследования</div>
-                            <div class="rent-service__text">Наша задача — сделать так, чтобы проект был реализован в срок, в рамках бюджета и соответствовал вашим ожиданиям</div>
-                        </div>
-                        <div class="rent-service__item">
-                            <div class="rent-service__name">Финансовые услуги и BI-аналитика</div>
-                            <div class="rent-service__text">Появилась задача, но искать новых сотрудников нет желания? Передайте свою задачу нам и увидите лучший результат</div>
-                        </div>
-                        <div class="rent-service__item">
-                            <div class="rent-service__name">Аутсорсинг отдела развития</div>
-                            <div class="rent-service__text">Позаботимся о состоянии вашей недвижимости, поможем в подборе необходимого оборудования </div>
-                        </div>
-                        <div class="rent-service__item">
-                            <div class="rent-service__name">Сервисные услуги</div>
-                            <div class="rent-service__text"><span class="list-item">Услуги связи</span><br>Мы предоставляем....<br><br><span class="list-item">IT-аутсорсинг</span><br>Мы предоставляем....</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="rent-cases">
-                <div class="rent-cases__container">
-                    <h2 class="h2 rent-cases__title">Наши кейсы</h2>
-                    <div class="rent-cases__list">
-                        <div class="rent-cases__item"><img class="rent-cases__img" src="assets/images/rent-cases/1.png" alt="" />
-                            <div class="rent-cases__content">
-                                <div class="rent-cases__name">Концепция и запуск ТРЦ «Новоизмайловский»</div>
-                                <div class="rent-cases__text">
-                                    <p>Нашей основной задачей было — разработать план и собрать пул арендаторов.</p>
-                                    <p>Мы провели аналитику локации, составили портрет ЦА и выяснили основные потребности в товарах и услугах 25 000 жителей района. После чего создали матрицу подходящих ритейлеров (в первую очередь среди федеральных сетей), разработали рекламную стратегию и принялись наполнять торговый центр — заключать договора.</p>
-                                    <p>В течение 7-ми месяцев в полностью пустой торговый центр (в стадии активной стройки) нами были подписаны такие якоря как: «Лента», «Кораблик», «Эльдорадо, „Кари“, „БургерКинг“, „Четыре Лапы“.</p>
-                                    <p>Суммарно за это срок мы подписали более чем 70% арендопригодной площадей всего ТЦ</p>
+                        <div class="map-list__list">
+                            <div class="item">
+                                <div class="item__img-wrap"><a class="item__link" href=""><img class="item__img" src="assets/images/items/1.png" alt="" /></a>
+                                    <div class="item__class">A</div><a class="item__bookmark" href=""><img class="item__bookmark-icon" src="assets/images/heart.png" alt="" /></a>
+                                    <div class="item__photo"><img class="item__photo-icon" src="assets/images/photo.png" alt="" />
+                                        <div class="item__photo-count">3</div>
+                                    </div>
                                 </div>
-                                <div class="rent-cases__info">
-                                    <p>GBA: 13.300 м2</p>
-                                    <p>GEO: г. Балашиха, Шоссе Энтузиастов вл 11 ст. 4</p>
+                                <div class="item__container">
+                                    <div class="item__row"><img class="item__icon" src="assets/images/address_green.png" alt="" />
+                                        <div class="item__text">МО Щёлковское</div>
+                                    </div><a class="item__name" href="">СК Лазурь на Новорязанке</a>
+                                    <div class="item__row"><img class="item__icon" src="assets/images/area.png" alt="" />
+                                        <div class="item__text">От 1 000 до 1 160 м²</div>
+                                    </div>
+                                    <div class="item__text">3 000₽ за м²/год</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item__img-wrap"><a class="item__link" href=""><img class="item__img" src="assets/images/items/2.png" alt="" /></a>
+                                    <div class="item__class">B</div><a class="item__bookmark" href=""><img class="item__bookmark-icon" src="assets/images/heart.png" alt="" /></a>
+                                    <div class="item__photo"><img class="item__photo-icon" src="assets/images/photo.png" alt="" />
+                                        <div class="item__photo-count">3</div>
+                                    </div>
+                                </div>
+                                <div class="item__container">
+                                    <div class="item__row"><img class="item__icon" src="assets/images/address_green.png" alt="" />
+                                        <div class="item__text">МО Щёлковское</div>
+                                    </div><a class="item__name" href="">СК Лазурь на Новорязанке</a>
+                                    <div class="item__row"><img class="item__icon" src="assets/images/area.png" alt="" />
+                                        <div class="item__text">От 1 000 до 1 160 м²</div>
+                                    </div>
+                                    <div class="item__text">3 000₽ за м²/год</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item__img-wrap"><a class="item__link" href=""><img class="item__img" src="assets/images/items/3.png" alt="" /></a>
+                                    <div class="item__class">C</div><a class="item__bookmark" href=""><img class="item__bookmark-icon" src="assets/images/heart.png" alt="" /></a>
+                                    <div class="item__photo"><img class="item__photo-icon" src="assets/images/photo.png" alt="" />
+                                        <div class="item__photo-count">3</div>
+                                    </div>
+                                </div>
+                                <div class="item__container">
+                                    <div class="item__row"><img class="item__icon" src="assets/images/address_green.png" alt="" />
+                                        <div class="item__text">МО Щёлковское</div>
+                                    </div><a class="item__name" href="">СК Лазурь на Новорязанке</a>
+                                    <div class="item__row"><img class="item__icon" src="assets/images/area.png" alt="" />
+                                        <div class="item__text">От 1 000 до 1 160 м²</div>
+                                    </div>
+                                    <div class="item__text">3 000₽ за м²/год</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item__img-wrap"><a class="item__link" href=""><img class="item__img" src="assets/images/items/4.png" alt="" /></a>
+                                    <div class="item__class">B+</div><a class="item__bookmark" href=""><img class="item__bookmark-icon" src="assets/images/heart.png" alt="" /></a>
+                                    <div class="item__photo"><img class="item__photo-icon" src="assets/images/photo.png" alt="" />
+                                        <div class="item__photo-count">3</div>
+                                    </div>
+                                </div>
+                                <div class="item__container">
+                                    <div class="item__row"><img class="item__icon" src="assets/images/address_green.png" alt="" />
+                                        <div class="item__text">МО Щёлковское</div>
+                                    </div><a class="item__name" href="">СК Лазурь на Новорязанке</a>
+                                    <div class="item__row"><img class="item__icon" src="assets/images/area.png" alt="" />
+                                        <div class="item__text">От 1 000 до 1 160 м²</div>
+                                    </div>
+                                    <div class="item__text">3 000₽ за м²/год</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item__img-wrap"><a class="item__link" href=""><img class="item__img" src="assets/images/items/5.png" alt="" /></a>
+                                    <div class="item__class">A</div><a class="item__bookmark" href=""><img class="item__bookmark-icon" src="assets/images/heart.png" alt="" /></a>
+                                    <div class="item__photo"><img class="item__photo-icon" src="assets/images/photo.png" alt="" />
+                                        <div class="item__photo-count">3</div>
+                                    </div>
+                                </div>
+                                <div class="item__container">
+                                    <div class="item__row"><img class="item__icon" src="assets/images/address_green.png" alt="" />
+                                        <div class="item__text">МО Щёлковское</div>
+                                    </div><a class="item__name" href="">СК Лазурь на Новорязанке</a>
+                                    <div class="item__row"><img class="item__icon" src="assets/images/area.png" alt="" />
+                                        <div class="item__text">От 1 000 до 1 160 м²</div>
+                                    </div>
+                                    <div class="item__text">3 000₽ за м²/год</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="rent-cases__item"><img class="rent-cases__img" src="assets/images/rent-cases/1.png" alt="" />
-                            <div class="rent-cases__content">
-                                <div class="rent-cases__name">Концепция и запуск ТРЦ «Новоизмайловский»</div>
-                                <div class="rent-cases__text">
-                                    <p>Нашей основной задачей было — разработать план и собрать пул арендаторов.</p>
-                                    <p>Мы провели аналитику локации, составили портрет ЦА и выяснили основные потребности в товарах и услугах 25 000 жителей района. После чего создали матрицу подходящих ритейлеров (в первую очередь среди федеральных сетей), разработали рекламную стратегию и принялись наполнять торговый центр — заключать договора.</p>
-                                    <p>В течение 7-ми месяцев в полностью пустой торговый центр (в стадии активной стройки) нами были подписаны такие якоря как: «Лента», «Кораблик», «Эльдорадо, „Кари“, „БургерКинг“, „Четыре Лапы“.</p>
-                                    <p>Суммарно за это срок мы подписали более чем 70% арендопригодной площадей всего ТЦ</p>
-                                </div>
-                                <div class="rent-cases__info">
-                                    <p>GBA: 13.300 м2</p>
-                                    <p>GEO: г. Балашиха, Шоссе Энтузиастов вл 11 ст. 4</p>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="list-btn map__list-btn"><img class="list-btn__icon" src="assets/images/list.png" alt="" />
+                        <div class="list-btn__text">К списку объявлений</div>
+                    </div>
+                    <div class="map-btn map__rule">
+                        <div class="map-btn__text">Измерить</div>
+                        <div class="map-btn__icon-wrap"><img class="map-btn__icon" src="assets/images/rule.png" alt="" /></div>
+                    </div>
+                    <div class="map-btn map__highlight">
+                        <div class="map-btn__text">Выделить область</div>
+                        <div class="map-btn__icon-wrap"><img class="map-btn__icon" src="assets/images/highlight.png" alt="" /></div>
+                    </div>
+                    <div class="map-scale map__scale">
+                        <div class="map-btn">
+                            <div class="map-btn__text">Увеличить</div>
+                            <div class="map-btn__icon-wrap"><img class="map-btn__icon" src="assets/images/inc.png" alt="" /></div>
+                        </div>
+                        <div class="map-btn">
+                            <div class="map-btn__text">Уменьшить</div>
+                            <div class="map-btn__icon-wrap"><img class="map-btn__icon" src="assets/images/dec.png" alt="" /></div>
                         </div>
                     </div>
+                    <div class="map-btn map__send">
+                        <div class="map-btn__text">Отправить</div>
+                        <div class="map-btn__icon-wrap"><img class="map-btn__icon" src="assets/images/send.png" alt="" /></div>
+                    </div>
+                    <div class="map-btn map__help">
+                        <div class="map-btn__text">Помощь</div>
+                        <div class="map-btn__icon-wrap"><img class="map-btn__icon" src="assets/images/question.png" alt="" /></div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="capture">
-            <div class="capture__container">
-                <div class="capture__col">
-                    <h2 class="h2">Будем рады обсудить ваш запрос!</h2>
-                    <div class="capture__text">Оставьте заявку и наш внимательный менеджер свяжется с вами</div>
-                    <form class="capture__form" action="" method="post"><input class="capture__input" type="text" name="phone" placeholder="+7 ___-___-__-__" /><button class="capture__btn">Оставить заявку</button></form>
-                </div><img class="capture__img" src="assets/images/man.png" alt="" />
-            </div>
-        </div>
-        <div class="partners">
-            <div class="partners__container">
-                <h2 class="h2 partners__title">Нам доверяют</h2>
-                <div class="partners__list"><a class="partners__link partners__link--bg-1" href=""><img class="partners__img" src="assets/images/partners/1.png" alt="" /></a><a class="partners__link partners__link--bg-2" href=""><img class="partners__img" src="assets/images/partners/2.png" alt="" /></a><a class="partners__link partners__link--bg-3" href=""><img class="partners__img" src="assets/images/partners/3.png" alt="" /></a><a class="partners__link partners__link--bg-4" href=""><img class="partners__img" src="assets/images/partners/4.png" alt="" /></a><a class="partners__link partners__link--bg-5" href=""><img class="partners__img" src="assets/images/partners/5.png" alt="" /></a><a class="partners__link partners__link--bg-6" href=""><img class="partners__img" src="assets/images/partners/6.png" alt="" /></a></div>
             </div>
         </div>
     </main>
@@ -283,7 +324,6 @@
     <script src="assets/scripts/libs/jquery.maskedinput.min.js"></script>
     <script src="assets/scripts/libs/jquery.jscrollpane.min.js"></script>
     <script src="assets/scripts/libs/jquery.mousewheel.js"></script>
-    <script src="assets/scripts/libs/jquery.bxslider.min.js"></script>
     <script src="assets/scripts/index.js"></script>
 </body>
 
