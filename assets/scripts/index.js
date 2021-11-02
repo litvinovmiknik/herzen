@@ -173,81 +173,91 @@
         /* harmony import */
         var _blocks_form_room_form_room_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/ __webpack_require__.n(_blocks_form_room_form_room_js__WEBPACK_IMPORTED_MODULE_2__);
         /* harmony import */
-        var _blocks_select_select_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4);
+        var _blocks_form_road_form_road_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4);
         /* harmony import */
-        var _blocks_select_select_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/ __webpack_require__.n(_blocks_select_select_js__WEBPACK_IMPORTED_MODULE_3__);
+        var _blocks_form_road_form_road_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/ __webpack_require__.n(_blocks_form_road_form_road_js__WEBPACK_IMPORTED_MODULE_3__);
         /* harmony import */
-        var _blocks_skills_skills_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(5);
+        var _blocks_select_select_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(5);
         /* harmony import */
-        var _blocks_skills_skills_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/ __webpack_require__.n(_blocks_skills_skills_js__WEBPACK_IMPORTED_MODULE_4__);
+        var _blocks_select_select_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/ __webpack_require__.n(_blocks_select_select_js__WEBPACK_IMPORTED_MODULE_4__);
         /* harmony import */
-        var _blocks_partners_partners_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6);
+        var _blocks_skills_skills_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6);
         /* harmony import */
-        var _blocks_partners_partners_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/ __webpack_require__.n(_blocks_partners_partners_js__WEBPACK_IMPORTED_MODULE_5__);
+        var _blocks_skills_skills_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/ __webpack_require__.n(_blocks_skills_skills_js__WEBPACK_IMPORTED_MODULE_5__);
         /* harmony import */
-        var _blocks_smi_smi_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(7);
+        var _blocks_partners_partners_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(7);
         /* harmony import */
-        var _blocks_smi_smi_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/ __webpack_require__.n(_blocks_smi_smi_js__WEBPACK_IMPORTED_MODULE_6__);
+        var _blocks_partners_partners_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/ __webpack_require__.n(_blocks_partners_partners_js__WEBPACK_IMPORTED_MODULE_6__);
         /* harmony import */
-        var _blocks_popup_callback_popup_callback_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(8);
+        var _blocks_smi_smi_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(8);
         /* harmony import */
-        var _blocks_popup_callback_popup_callback_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/ __webpack_require__.n(_blocks_popup_callback_popup_callback_js__WEBPACK_IMPORTED_MODULE_7__);
+        var _blocks_smi_smi_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/ __webpack_require__.n(_blocks_smi_smi_js__WEBPACK_IMPORTED_MODULE_7__);
         /* harmony import */
-        var _blocks_popup_success_popup_success_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(9);
+        var _blocks_popup_callback_popup_callback_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(9);
         /* harmony import */
-        var _blocks_popup_success_popup_success_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/ __webpack_require__.n(_blocks_popup_success_popup_success_js__WEBPACK_IMPORTED_MODULE_8__);
+        var _blocks_popup_callback_popup_callback_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/ __webpack_require__.n(_blocks_popup_callback_popup_callback_js__WEBPACK_IMPORTED_MODULE_8__);
         /* harmony import */
-        var _blocks_catalog_form_catalog_form_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(10);
+        var _blocks_popup_success_popup_success_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(10);
         /* harmony import */
-        var _blocks_catalog_form_catalog_form_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/ __webpack_require__.n(_blocks_catalog_form_catalog_form_js__WEBPACK_IMPORTED_MODULE_9__);
+        var _blocks_popup_success_popup_success_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/ __webpack_require__.n(_blocks_popup_success_popup_success_js__WEBPACK_IMPORTED_MODULE_9__);
         /* harmony import */
-        var _blocks_sort_sort_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(11);
+        var _blocks_catalog_form_catalog_form_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(11);
         /* harmony import */
-        var _blocks_sort_sort_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/ __webpack_require__.n(_blocks_sort_sort_js__WEBPACK_IMPORTED_MODULE_10__);
+        var _blocks_catalog_form_catalog_form_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/ __webpack_require__.n(_blocks_catalog_form_catalog_form_js__WEBPACK_IMPORTED_MODULE_10__);
         /* harmony import */
-        var _blocks_product_price_product_price_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(12);
+        var _blocks_sort_sort_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(12);
         /* harmony import */
-        var _blocks_product_price_product_price_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/ __webpack_require__.n(_blocks_product_price_product_price_js__WEBPACK_IMPORTED_MODULE_11__);
+        var _blocks_sort_sort_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/ __webpack_require__.n(_blocks_sort_sort_js__WEBPACK_IMPORTED_MODULE_11__);
         /* harmony import */
-        var _blocks_product_slider_product_slider_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(13);
+        var _blocks_product_price_product_price_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(13);
         /* harmony import */
-        var _blocks_product_slider_product_slider_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/ __webpack_require__.n(_blocks_product_slider_product_slider_js__WEBPACK_IMPORTED_MODULE_12__);
+        var _blocks_product_price_product_price_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/ __webpack_require__.n(_blocks_product_price_product_price_js__WEBPACK_IMPORTED_MODULE_12__);
         /* harmony import */
-        var _blocks_product_desc_product_desc_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(14);
+        var _blocks_product_slider_product_slider_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(14);
         /* harmony import */
-        var _blocks_product_desc_product_desc_js__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/ __webpack_require__.n(_blocks_product_desc_product_desc_js__WEBPACK_IMPORTED_MODULE_13__);
+        var _blocks_product_slider_product_slider_js__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/ __webpack_require__.n(_blocks_product_slider_product_slider_js__WEBPACK_IMPORTED_MODULE_13__);
         /* harmony import */
-        var _blocks_watched_watched_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(15);
+        var _blocks_product_desc_product_desc_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(15);
         /* harmony import */
-        var _blocks_watched_watched_js__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/ __webpack_require__.n(_blocks_watched_watched_js__WEBPACK_IMPORTED_MODULE_14__);
+        var _blocks_product_desc_product_desc_js__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/ __webpack_require__.n(_blocks_product_desc_product_desc_js__WEBPACK_IMPORTED_MODULE_14__);
         /* harmony import */
-        var _blocks_owner_cases_owner_cases_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(16);
+        var _blocks_watched_watched_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(16);
         /* harmony import */
-        var _blocks_owner_cases_owner_cases_js__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/ __webpack_require__.n(_blocks_owner_cases_owner_cases_js__WEBPACK_IMPORTED_MODULE_15__);
+        var _blocks_watched_watched_js__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/ __webpack_require__.n(_blocks_watched_watched_js__WEBPACK_IMPORTED_MODULE_15__);
         /* harmony import */
-        var _blocks_rent_cases_rent_cases_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(17);
+        var _blocks_owner_cases_owner_cases_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(17);
         /* harmony import */
-        var _blocks_rent_cases_rent_cases_js__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/ __webpack_require__.n(_blocks_rent_cases_rent_cases_js__WEBPACK_IMPORTED_MODULE_16__);
+        var _blocks_owner_cases_owner_cases_js__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/ __webpack_require__.n(_blocks_owner_cases_owner_cases_js__WEBPACK_IMPORTED_MODULE_16__);
         /* harmony import */
-        var _blocks_favorites_favorites_js__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(18);
+        var _blocks_rent_cases_rent_cases_js__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(18);
         /* harmony import */
-        var _blocks_favorites_favorites_js__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/ __webpack_require__.n(_blocks_favorites_favorites_js__WEBPACK_IMPORTED_MODULE_17__);
+        var _blocks_rent_cases_rent_cases_js__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/ __webpack_require__.n(_blocks_rent_cases_rent_cases_js__WEBPACK_IMPORTED_MODULE_17__);
         /* harmony import */
-        var _blocks_geo_popup_geo_popup_js__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(19);
+        var _blocks_favorites_favorites_js__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(19);
         /* harmony import */
-        var _blocks_geo_popup_geo_popup_js__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/ __webpack_require__.n(_blocks_geo_popup_geo_popup_js__WEBPACK_IMPORTED_MODULE_18__);
+        var _blocks_favorites_favorites_js__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/ __webpack_require__.n(_blocks_favorites_favorites_js__WEBPACK_IMPORTED_MODULE_18__);
         /* harmony import */
-        var _blocks_owner_workflow_owner_workflow_js__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(20);
+        var _blocks_geo_popup_geo_popup_js__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(20);
         /* harmony import */
-        var _blocks_owner_workflow_owner_workflow_js__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/ __webpack_require__.n(_blocks_owner_workflow_owner_workflow_js__WEBPACK_IMPORTED_MODULE_19__);
+        var _blocks_geo_popup_geo_popup_js__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/ __webpack_require__.n(_blocks_geo_popup_geo_popup_js__WEBPACK_IMPORTED_MODULE_19__);
         /* harmony import */
-        var _blocks_metro_popup_metro_popup_js__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(21);
+        var _blocks_owner_workflow_owner_workflow_js__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(21);
         /* harmony import */
-        var _blocks_metro_popup_metro_popup_js__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/ __webpack_require__.n(_blocks_metro_popup_metro_popup_js__WEBPACK_IMPORTED_MODULE_20__);
+        var _blocks_owner_workflow_owner_workflow_js__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/ __webpack_require__.n(_blocks_owner_workflow_owner_workflow_js__WEBPACK_IMPORTED_MODULE_20__);
         /* harmony import */
-        var _blocks_map_list_map_list_js__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(22);
+        var _blocks_metro_popup_metro_popup_js__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(22);
         /* harmony import */
-        var _blocks_map_list_map_list_js__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/ __webpack_require__.n(_blocks_map_list_map_list_js__WEBPACK_IMPORTED_MODULE_21__);
+        var _blocks_metro_popup_metro_popup_js__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/ __webpack_require__.n(_blocks_metro_popup_metro_popup_js__WEBPACK_IMPORTED_MODULE_21__);
+        /* harmony import */
+        var _blocks_map_list_map_list_js__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(23);
+        /* harmony import */
+        var _blocks_map_list_map_list_js__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/ __webpack_require__.n(_blocks_map_list_map_list_js__WEBPACK_IMPORTED_MODULE_22__);
+        /* harmony import */
+        var _blocks_search_form_search_form_js__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(24);
+        /* harmony import */
+        var _blocks_search_form_search_form_js__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/ __webpack_require__.n(_blocks_search_form_search_form_js__WEBPACK_IMPORTED_MODULE_23__);
+
+
 
 
 
@@ -358,11 +368,86 @@
             $('.form-room__select-wrap').on('click', function() {
                 showCheckboxes();
             });
+            $('html, body').on('click', function() {
+                $('.form-room__container').hide();
+                $('.form-room__select').removeClass('active');
+                changeSelectText();
+            }).on('click', '.form-room', function(e) {
+                e.stopPropagation();
+            });
         });
 
         /***/
     }),
     /* 4 */
+    /***/
+    (function(module, exports) {
+
+        jQuery(document).ready(function($) {
+            var expanded = false;
+
+            function showContainer(self) {
+                var container = self.parents('.form-road').find('.form-road__container');
+                var select = self.parents('.form-road').find('.form-road__select');
+
+                if (!expanded) {
+                    container.show();
+                    select.addClass('active');
+                    expanded = true;
+                } else {
+                    container.hide();
+                    select.removeClass('active');
+                    expanded = false;
+                }
+
+                changeSelectText();
+            }
+
+            function changeSelectText() {
+                var count = $('.form-road__container').find('input[type=checkbox]:checked').length;
+                var text = count > 0 ? 'Шоссе (' + count + ')' : 'Шоссе';
+                $('.form-road__select option').text(text);
+            }
+
+            $('.form-road__select-wrap').on('click', function() {
+                showContainer($(this));
+            });
+            $('html, body').on('click', function() {
+                $('.form-road__container').hide();
+                $('.form-road__select').removeClass('active');
+                changeSelectText();
+            }).on('click', '.form-road', function(e) {
+                e.stopPropagation();
+            }); // Полоса прокрутки
+
+            $('.form-road__container').jScrollPane({
+                autoReinitialise: true
+            }); // Умный поиск
+
+            $('.form-road__input').keyup(function() {
+                var that = $(this);
+                var input_length = that.val().length;
+
+                if (input_length > 0) {
+                    $('.form-road .checkbox').hide();
+                    $('.form-road .checkbox').each(function() {
+                        var text = $(this).children('.checkbox__label').text().toUpperCase();
+
+                        if (text.indexOf(that.val().trim().toUpperCase()) != -1) {
+                            $(this).show();
+                        }
+                    });
+                } else if (input_length == 0) {
+                    $('.form-road .checkbox').show();
+                } else {
+                    $('.form-road .checkbox').hide();
+                }
+            });
+        });
+
+        /***/
+    }),
+    /* 5 */
     /***/
     (function(module, exports) {
 
@@ -393,11 +478,17 @@
                 $(this).parent().hide();
                 $(this).parents('.select').find('.select__select').removeClass('active');
             });
+            $('html, body').on('click', function() {
+                $('.select__container').hide();
+                $('.select__select').removeClass('active');
+            }).on('click', '.select', function(e) {
+                e.stopPropagation();
+            });
         });
 
         /***/
     }),
-    /* 5 */
+    /* 6 */
     /***/
     (function(module, exports) {
 
@@ -414,7 +505,7 @@
 
         /***/
     }),
-    /* 6 */
+    /* 7 */
     /***/
     (function(module, exports) {
 
@@ -430,7 +521,7 @@
 
         /***/
     }),
-    /* 7 */
+    /* 8 */
     /***/
     (function(module, exports) {
 
@@ -447,7 +538,7 @@
 
         /***/
     }),
-    /* 8 */
+    /* 9 */
     /***/
     (function(module, exports) {
 
@@ -465,7 +556,7 @@
 
         /***/
     }),
-    /* 9 */
+    /* 10 */
     /***/
     (function(module, exports) {
 
@@ -487,7 +578,7 @@
 
         /***/
     }),
-    /* 10 */
+    /* 11 */
     /***/
     (function(module, exports) {
 
@@ -499,7 +590,7 @@
 
         /***/
     }),
-    /* 11 */
+    /* 12 */
     /***/
     (function(module, exports) {
 
@@ -524,11 +615,17 @@
             $('.sort__select-wrap').on('click', function() {
                 showCheckboxes();
             });
+            $('html, body').on('click', function() {
+                $('.sort__container').hide();
+                $('.sort__select').removeClass('active');
+            }).on('click', '.sort', function(e) {
+                e.stopPropagation();
+            });
         });
 
         /***/
     }),
-    /* 12 */
+    /* 13 */
     /***/
     (function(module, exports) {
 
@@ -557,7 +654,7 @@
 
         /***/
     }),
-    /* 13 */
+    /* 14 */
     /***/
     (function(module, exports) {
 
@@ -574,7 +671,7 @@
 
         /***/
     }),
-    /* 14 */
+    /* 15 */
     /***/
     (function(module, exports) {
 
@@ -589,7 +686,7 @@
 
         /***/
     }),
-    /* 15 */
+    /* 16 */
     /***/
     (function(module, exports) {
 
@@ -606,7 +703,7 @@
 
         /***/
     }),
-    /* 16 */
+    /* 17 */
     /***/
     (function(module, exports) {
 
@@ -623,7 +720,7 @@
 
         /***/
     }),
-    /* 17 */
+    /* 18 */
     /***/
     (function(module, exports) {
 
@@ -640,23 +737,27 @@
 
         /***/
     }),
-    /* 18 */
+    /* 19 */
     /***/
     (function(module, exports) {
 
         jQuery(document).ready(function($) {
             $('.favorites__list').jScrollPane({
-                resizeSensor: true
+                autoReinitialise: true
             });
-            $('.favorites__popup').hide();
             $('.favorites__btn').on('click', function() {
                 $('.favorites__popup').toggle();
+            });
+            $('html, body').on('click', function() {
+                $('.favorites__popup').hide();
+            }).on('click', '.favorites__btn, .favorites__popup', function(e) {
+                e.stopPropagation();
             });
         });
 
         /***/
     }),
-    /* 19 */
+    /* 20 */
     /***/
     (function(module, exports) {
 
@@ -676,7 +777,7 @@
 
         /***/
     }),
-    /* 20 */
+    /* 21 */
     /***/
     (function(module, exports) {
 
@@ -689,7 +790,7 @@
 
         /***/
     }),
-    /* 21 */
+    /* 22 */
     /***/
     (function(module, exports) {
 
@@ -709,20 +810,42 @@
 
         /***/
     }),
-    /* 22 */
+    /* 23 */
     /***/
     (function(module, exports) {
 
         jQuery(document).ready(function($) {
             $('.map-list').jScrollPane({
-                resizeSensor: true
+                autoReinitialise: true
             });
-            $('.map-list').hide();
             $('.list-btn').on('click', function() {
-                $('.map-list').css('display', 'flex');
+                $('.map-list').toggle();
             });
             $('.map-list__close').on('click', function() {
                 $('.map-list').hide();
+            });
+            $('html, body').on('click', function() {
+                $('.map-list').hide();
+            }).on('click', '.map-list, .list-btn', function(e) {
+                e.stopPropagation();
+            });
+        });
+
+        /***/
+    }),
+    /* 24 */
+    /***/
+    (function(module, exports) {
+
+        jQuery(document).ready(function($) {
+            $('.search-form__result').jScrollPane({
+                autoReinitialise: true
+            });
+            $('.search-form__input').on('focus', function() {
+                $('.search-form__result').show();
+            });
+            $('.search-form__input').on('blur', function() {
+                $('.search-form__result').hide();
             });
         });
 

@@ -22,33 +22,35 @@
         <div class="geo-popup__container"><img class="geo-popup__close" src="assets/images/plus.png" alt="" />
             <div class="geo-popup__title">Выберите регион или город</div>
             <form class="geo-popup__form" action="" method="post"><input class="geo-popup__input" type="text" placeholder="Введите регион или город" /><button class="geo-popup__btn"><img class="geo-popup__btn-icon" src="assets/images/search.png" alt="" /></button></form>
-            <div class="geo-popup__row">
-                <div class="geo-popup__item">
-                    <div class="geo-popup__city">Москва</div>
-                    <div class="geo-popup__list">
-                        <div class="radio-btn"><input class="radio-btn__input" type="radio" name="city-area" id="city-area-1" /><label class="radio-btn__label" for="city-area-1">ЦАО</label></div>
-                        <div class="radio-btn"><input class="radio-btn__input" type="radio" name="city-area" id="city-area-2" checked="checked" /><label class="radio-btn__label" for="city-area-2">САО</label></div>
-                        <div class="radio-btn"><input class="radio-btn__input" type="radio" name="city-area" id="city-area-3" /><label class="radio-btn__label" for="city-area-3">ВАО</label></div>
-                        <div class="radio-btn"><input class="radio-btn__input" type="radio" name="city-area" id="city-area-4" /><label class="radio-btn__label" for="city-area-4">ЮВАО</label></div>
-                        <div class="radio-btn"><input class="radio-btn__input" type="radio" name="city-area" id="city-area-5" /><label class="radio-btn__label" for="city-area-5">ЮЗАО</label></div>
-                        <div class="radio-btn"><input class="radio-btn__input" type="radio" name="city-area" id="city-area-6" /><label class="radio-btn__label" for="city-area-6">ЗАО</label></div>
-                        <div class="radio-btn"><input class="radio-btn__input" type="radio" name="city-area" id="city-area-7" /><label class="radio-btn__label" for="city-area-7">СВАО</label></div>
-                        <div class="radio-btn"><input class="radio-btn__input" type="radio" name="city-area" id="city-area-8" /><label class="radio-btn__label" for="city-area-8">ЮАО</label></div>
-                        <div class="radio-btn"><input class="radio-btn__input" type="radio" name="city-area" id="city-area-9" /><label class="radio-btn__label" for="city-area-9">СЗАО</label></div>
+            <form class="geo-popup__area-form" action="" method="post">
+                <div class="geo-popup__row">
+                    <div class="geo-popup__item">
+                        <div class="geo-popup__city">Москва</div>
+                        <div class="geo-popup__list">
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="city-area-1" id="city-area-1" /><label class="checkbox-btn__label" for="city-area-1">ЦАО</label></div>
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="city-area-2" id="city-area-2" /><label class="checkbox-btn__label" for="city-area-2">САО</label></div>
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="city-area-3" id="city-area-3" /><label class="checkbox-btn__label" for="city-area-3">ВАО</label></div>
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="city-area-4" id="city-area-4" /><label class="checkbox-btn__label" for="city-area-4">ЮВАО</label></div>
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="city-area-5" id="city-area-5" /><label class="checkbox-btn__label" for="city-area-5">ЮЗАО</label></div>
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="city-area-6" id="city-area-6" /><label class="checkbox-btn__label" for="city-area-6">ЗАО</label></div>
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="city-area-7" id="city-area-7" /><label class="checkbox-btn__label" for="city-area-7">СВАО</label></div>
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="city-area-8" id="city-area-8" /><label class="checkbox-btn__label" for="city-area-8">ЮАО</label></div>
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="city-area-9" id="city-area-9" /><label class="checkbox-btn__label" for="city-area-9">СЗАО</label></div>
+                        </div>
                     </div>
-                </div>
-                <div class="geo-popup__item">
-                    <div class="geo-popup__city">Московская область</div>
-                    <div class="geo-popup__list">
-                        <div class="radio-btn"><input class="radio-btn__input" type="radio" name="city-area" id="city-area-10" /><label class="radio-btn__label" for="city-area-10">С</label></div>
-                        <div class="radio-btn"><input class="radio-btn__input" type="radio" name="city-area" id="city-area-11" /><label class="radio-btn__label" for="city-area-11">СВ</label></div>
-                        <div class="radio-btn"><input class="radio-btn__input" type="radio" name="city-area" id="city-area-12" /><label class="radio-btn__label" for="city-area-12">СЗ</label></div>
-                        <div class="radio-btn"><input class="radio-btn__input" type="radio" name="city-area" id="city-area-13" /><label class="radio-btn__label" for="city-area-13">Ю</label></div>
-                        <div class="radio-btn"><input class="radio-btn__input" type="radio" name="city-area" id="city-area-14" /><label class="radio-btn__label" for="city-area-14">ЮВ</label></div>
-                        <div class="radio-btn"><input class="radio-btn__input" type="radio" name="city-area" id="city-area-15" /><label class="radio-btn__label" for="city-area-15">ЮЗ</label></div>
+                    <div class="geo-popup__item">
+                        <div class="geo-popup__city">Московская область</div>
+                        <div class="geo-popup__list">
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="city-area-10" id="city-area-10" /><label class="checkbox-btn__label" for="city-area-10">С</label></div>
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="city-area-11" id="city-area-11" /><label class="checkbox-btn__label" for="city-area-11">СВ</label></div>
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="city-area-12" id="city-area-12" /><label class="checkbox-btn__label" for="city-area-12">СЗ</label></div>
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="city-area-13" id="city-area-13" /><label class="checkbox-btn__label" for="city-area-13">Ю</label></div>
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="city-area-14" id="city-area-14" /><label class="checkbox-btn__label" for="city-area-14">ЮВ</label></div>
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="city-area-15" id="city-area-15" /><label class="checkbox-btn__label" for="city-area-15">ЮЗ</label></div>
+                        </div>
                     </div>
-                </div>
-            </div>
+                </div><button class="geo-popup__area-btn">Подобрать</button>
+            </form>
         </div>
     </div>
     <div class="popup-callback">
@@ -212,7 +214,7 @@
                             </div>
                         </div>
                         <div class="stores-form__row">
-                            <div class="form-room">
+                            <div class="form-room stores-form__room">
                                 <div class="form-room__select-wrap">
                                     <div class="form-room__select-overlay"></div><select class="form-room__select">
                                         <option>Склад</option>
@@ -224,7 +226,7 @@
                                     <div class="checkbox form-room__checkbox"><input class="checkbox__input" type="checkbox" name="room-3" id="room-3" /><label class="checkbox__label" for="room-3">ПСН</label></div>
                                 </div>
                             </div>
-                            <div class="form-area">
+                            <div class="form-area stores-form__area">
                                 <div class="form-area__label">Площадь</div>
                                 <div class="form-area__row">
                                     <div class="form-area__text">От</div><input class="form-area__input" type="text" name="from-area" placeholder="30" />
@@ -233,7 +235,7 @@
                                     <div class="form-area__text">м²</div>
                                 </div>
                             </div>
-                            <div class="form-class">
+                            <div class="form-class stores-form__class">
                                 <div class="form-class__label">Класс</div>
                                 <div class="checkbox-btn form-class__checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="class-1" id="class-1" checked="checked" /><label class="checkbox-btn__label" for="class-1">А</label></div>
                                 <div class="checkbox-btn form-class__checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="class-2" id="class-2" /><label class="checkbox-btn__label" for="class-2">В+</label></div>
@@ -243,7 +245,7 @@
                         </div>
                         <div class="stores-form__row">
                             <div class="stores-form__price-wrap">
-                                <div class="form-price">
+                                <div class="form-price stores-form__price">
                                     <div class="form-price__label">Цена <span class="form-price__label--mobile">за м² в год</span></div>
                                     <div class="form-price__row">
                                         <div class="form-price__text">От</div><input class="form-price__input" type="text" name="from" placeholder="3000" />
@@ -265,14 +267,30 @@
                             </div><button class="geo-btn" type="button">География<img class="geo-btn__icon" src="assets/images/geo_icon.png" alt="" /></button>
                         </div>
                         <div class="stores-form__row">
-                            <div class="select stores-form__road">
-                                <div class="select__select-wrap"><select class="select__select" name="road">
+                            <div class="form-road stores-form__road">
+                                <div class="form-road__select-wrap"><select class="form-road__select" name="road">
                                         <option>Шоссе</option>
                                     </select>
-                                    <div class="select__select-overlay"></div>
+                                    <div class="form-road__select-overlay"></div>
                                 </div>
-                                <div class="select__container">
-                                    <div class="select__item">Шоссе</div>
+                                <div class="form-road__container"><input class="form-road__input" type="text" placeholder="Поиск" />
+                                    <div class="checkbox"><input class="checkbox__input" type="checkbox" name="road-1" id="road-1" /><label class="checkbox__label" for="road-1">Алтуфьевское</label></div>
+                                    <div class="checkbox"><input class="checkbox__input" type="checkbox" name="road-2" id="road-2" /><label class="checkbox__label" for="road-2">Боровское</label></div>
+                                    <div class="checkbox"><input class="checkbox__input" type="checkbox" name="road-3" id="road-3" /><label class="checkbox__label" for="road-3">Варшавское</label></div>
+                                    <div class="checkbox"><input class="checkbox__input" type="checkbox" name="road-4" id="road-4" /><label class="checkbox__label" for="road-4">Волоколамское</label></div>
+                                    <div class="checkbox"><input class="checkbox__input" type="checkbox" name="road-5" id="road-5" /><label class="checkbox__label" for="road-5">Горьковское</label></div>
+                                    <div class="checkbox"><input class="checkbox__input" type="checkbox" name="road-6" id="road-6" /><label class="checkbox__label" for="road-6">Дзержинское</label></div>
+                                    <div class="checkbox"><input class="checkbox__input" type="checkbox" name="road-7" id="road-7" /><label class="checkbox__label" for="road-7">Дмитровское</label></div>
+                                    <div class="checkbox"><input class="checkbox__input" type="checkbox" name="road-8" id="road-8" /><label class="checkbox__label" for="road-8">Егорьевское</label></div>
+                                    <div class="checkbox"><input class="checkbox__input" type="checkbox" name="road-9" id="road-9" /><label class="checkbox__label" for="road-9">Калужское</label></div>
+                                    <div class="checkbox"><input class="checkbox__input" type="checkbox" name="road-10" id="road-10" /><label class="checkbox__label" for="road-10">Каширское</label></div>
+                                    <div class="checkbox"><input class="checkbox__input" type="checkbox" name="road-11" id="road-11" /><label class="checkbox__label" for="road-11">Киевское</label></div>
+                                    <div class="checkbox"><input class="checkbox__input" type="checkbox" name="road-12" id="road-12" /><label class="checkbox__label" for="road-12">Ленинградское</label></div>
+                                    <div class="checkbox"><input class="checkbox__input" type="checkbox" name="road-13" id="road-13" /><label class="checkbox__label" for="road-13">Минское</label></div>
+                                    <div class="checkbox"><input class="checkbox__input" type="checkbox" name="road-14" id="road-14" /><label class="checkbox__label" for="road-14">Можайское</label></div>
+                                    <div class="checkbox"><input class="checkbox__input" type="checkbox" name="road-15" id="road-15" /><label class="checkbox__label" for="road-15">Новорижское</label></div>
+                                    <div class="checkbox"><input class="checkbox__input" type="checkbox" name="road-16" id="road-16" /><label class="checkbox__label" for="road-16">Новорязанское</label></div>
+                                    <div class="checkbox"><input class="checkbox__input" type="checkbox" name="road-17" id="road-17" /><label class="checkbox__label" for="road-17">Носовихинское</label></div>
                                 </div>
                             </div>
                             <div class="form-mkad stores-form__mkad">
