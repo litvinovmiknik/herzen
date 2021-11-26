@@ -6450,11 +6450,14 @@ body {
     box-sizing: border-box;
 }
 
+.map {
+    position: relative;
+}
+
 .map__container {
     width: 100%;
     max-width: 1290px;
     margin: 0 auto;
-    position: relative;
 }
 
 .map__map {
@@ -6545,7 +6548,7 @@ body {
 
 .map__search {
     width: 100%;
-    max-width: 400px;
+    max-width: 425px;
     height: 35px;
     position: relative;
 }
@@ -6626,6 +6629,7 @@ body {
 .map__area {
     -ms-flex-negative: 0;
     flex-shrink: 0;
+    width: 250px;
     height: 35px;
     border: 1px solid #98DACD;
 }
@@ -6634,9 +6638,18 @@ body {
     margin-top: 0;
 }
 
+.map__area .form-area__input {
+    width: 85px;
+    padding-left: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: left;
+}
+
 .map__price {
     -ms-flex-negative: 0;
     flex-shrink: 0;
+    width: 250px;
     height: 35px;
     border: 1px solid #98DACD;
     border-top-right-radius: 6px;
@@ -6651,11 +6664,24 @@ body {
     display: inline;
 }
 
+.map__price .form-price__input {
+    width: 85px;
+    padding-left: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: left;
+}
+
 .map__class {
     -ms-flex-negative: 0;
     flex-shrink: 0;
+    width: 210px;
     height: 35px;
     border: 1px solid #98DACD;
+}
+
+.map__class .form-class__checkbox-btn {
+    margin-right: 8px;
 }
 
 .map__filter-btn {
@@ -9258,7 +9284,7 @@ body {
     }
 
     .map__search {
-        max-width: 686px;
+        max-width: 680px;
     }
 
     .not-actual__box {
@@ -9636,6 +9662,32 @@ body {
 
     .owner-workflow__stages {
         margin-top: 30px;
+    }
+
+    .map__area {
+        width: 200px;
+    }
+
+    .map__area .form-area__input {
+        width: 60px;
+        padding-left: 5px;
+    }
+
+    .map__price {
+        width: 200px;
+    }
+
+    .map__price .form-price__input {
+        width: 60px;
+        padding-left: 5px;
+    }
+
+    .map__class {
+        width: 200px;
+    }
+
+    .map__class .form-class__checkbox-btn {
+        margin-right: 5px;
     }
 
     .not-actual__content {
