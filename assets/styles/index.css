@@ -6454,6 +6454,7 @@ body {
     width: 100%;
     max-width: 1290px;
     margin: 0 auto;
+    position: relative;
 }
 
 .map__map {
@@ -6464,6 +6465,13 @@ body {
     background-position: center;
     background-size: cover;
     position: relative;
+}
+
+.map__map .filter-btn {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
 .map__list-btn {
@@ -6515,13 +6523,24 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 20px 0;
-    grid-gap: 20px;
+    padding: 15px 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    grid-gap: 15px;
+    position: relative;
+}
+
+.map__fields {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-gap: 15px;
 }
 
 .map__search {
@@ -6598,17 +6617,50 @@ body {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     grid-gap: 15px;
-}
-
-.map__checkboxes .checkbox-btn__label {
-    height: 35px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #DEDEDE;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-.map__checkboxes .checkbox-crossing .checkbox-btn__label {
-    padding-left: 7px;
-    padding-right: 7px;
+.map__area {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    height: 35px;
+    border: 1px solid #98DACD;
+}
+
+.map__area .form-area__row {
+    margin-top: 0;
+}
+
+.map__price {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    height: 35px;
+    border: 1px solid #98DACD;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.map__price .form-price__row {
+    margin-top: 0;
+}
+
+.map__price .form-price__label--mobile {
+    display: inline;
+}
+
+.map__class {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    height: 35px;
+    border: 1px solid #98DACD;
+}
+
+.map__filter-btn {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
 }
 
 .list-btn {
@@ -7128,6 +7180,185 @@ body {
     background-image: url(../images/check.png);
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.filter-btn {
+    width: 35px;
+    height: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #DEDEDE;
+    -webkit-box-shadow: 0px 0px 15px rgba(23, 114, 99, 0.08);
+    box-shadow: 0px 0px 15px rgba(23, 114, 99, 0.08);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.filter-btn.active {
+    background-color: #98DACD;
+}
+
+.map-filter {
+    display: none;
+    width: 100%;
+    max-width: 1140px;
+    background: #E8F0EF;
+    border-radius: 8px;
+    padding: 40px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 9;
+}
+
+.map-filter__fields {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    grid-gap: 20px;
+}
+
+.map-filter__search-form {
+    display: none;
+}
+
+.map-filter__form-area {
+    display: none;
+    width: 225px;
+}
+
+.map-filter__form-price {
+    display: none;
+    width: 225px;
+    border-radius: 6px;
+}
+
+.map-filter__form-price .form-price__sep {
+    margin-right: 10px;
+}
+
+.map-filter__form-class {
+    display: none;
+    width: 225px;
+}
+
+.map-filter__select .select__select {
+    width: 250px;
+}
+
+.map-filter__select .select__container {
+    width: 250px;
+}
+
+.map-filter__geo-btn {
+    width: 250px;
+}
+
+.map-filter__metro-btn {
+    width: 250px;
+}
+
+.map-filter__form-mkad {
+    width: 250px;
+}
+
+.map-filter__form-road .form-road__select {
+    width: 250px;
+}
+
+.map-filter__form-road .form-road__container {
+    width: 250px;
+}
+
+.map-filter__more {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #177263;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.map-filter__more-icon {
+    margin-left: 8px;
+}
+
+.map-filter__more-params {
+    display: none;
+}
+
+.map-filter__checkboxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    grid-gap: 15px;
+    margin-top: 25px;
+}
+
+.map-filter__checkboxes--mobile {
+    display: none;
+}
+
+.map-filter__btn {
+    width: 200px;
+    height: 42px;
+    background-color: #177263;
+    -webkit-box-shadow: 0px 0px 15px rgba(23, 114, 99, 0.3);
+    box-shadow: 0px 0px 15px rgba(23, 114, 99, 0.3);
+    border-radius: 6px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FDFDFD;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 30px auto 0;
+}
+
+.map-filter__btn:hover {
+    -webkit-box-shadow: 0px 0px 15px rgba(23, 114, 99, 0.5);
+    box-shadow: 0px 0px 15px rgba(23, 114, 99, 0.5);
+}
+
+.map-filter__btn:active {
+    background-color: #0F4940;
+    -webkit-box-shadow: 0px 0px 15px rgba(23, 114, 99, 0.5);
+    box-shadow: 0px 0px 15px rgba(23, 114, 99, 0.5);
 }
 
 @media screen and (max-width: 575px) {
@@ -7771,6 +8002,14 @@ body {
         max-width: 350px;
     }
 
+    .map__class {
+        width: 230px;
+    }
+
+    .map__class .form-class__checkbox-btn {
+        margin-right: 10px;
+    }
+
     .map-list {
         width: 320px;
     }
@@ -7817,6 +8056,92 @@ body {
 
     .not-found__row {
         margin-top: 30px;
+    }
+
+    .map-filter__fields {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .map-filter__search-form {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .map-filter__form-area {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .map-filter__form-price {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .map-filter__form-price .form-price__input {
+        width: 97px;
+    }
+
+    .map-filter__form-class {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .map-filter__select {
+        width: 100% !important;
+        max-width: 350px;
+    }
+
+    .map-filter__select .select__select {
+        width: 100% !important;
+        max-width: 350px;
+    }
+
+    .map-filter__select .select__container {
+        width: 100% !important;
+        max-width: 350px;
+    }
+
+    .map-filter__geo-btn {
+        width: 100% !important;
+        max-width: 350px;
+    }
+
+    .map-filter__metro-btn {
+        width: 100% !important;
+        max-width: 350px;
+    }
+
+    .map-filter__form-mkad {
+        width: 100% !important;
+        max-width: 350px;
+    }
+
+    .map-filter__form-road {
+        width: 100% !important;
+        max-width: 350px;
+    }
+
+    .map-filter__form-road .form-road__select {
+        width: 100% !important;
+        max-width: 350px;
+    }
+
+    .map-filter__form-road .form-road__container {
+        width: 100% !important;
+        max-width: 350px;
+    }
+
+    .map-filter__checkboxes {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .map-filter__btn {
+        width: 100% !important;
+        max-width: 350px;
     }
 }
 
@@ -8017,6 +8342,11 @@ body {
     }
 
     .map__row {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .map__checkboxes {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -8504,6 +8834,62 @@ body {
     .favorites-item__text-wrap {
         display: none;
     }
+
+    .map__map .filter-btn {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .map__row {
+        display: none;
+    }
+
+    .map__checkboxes {
+        display: none;
+    }
+
+    .map-filter {
+        top: 75px !important;
+        padding: 20px;
+    }
+
+    .map-filter__fields {
+        grid-gap: 10px;
+    }
+
+    .map-filter__search-form {
+        display: block;
+    }
+
+    .map-filter__form-area {
+        display: block;
+    }
+
+    .map-filter__form-price {
+        display: block;
+    }
+
+    .map-filter__form-class {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .map-filter__checkboxes {
+        grid-gap: 10px;
+        margin-top: 20px;
+    }
+
+    .map-filter__checkboxes--mobile {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .map-filter__btn {
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -8864,6 +9250,17 @@ body {
         margin-left: -195px;
     }
 
+    .map__row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .map__search {
+        max-width: 686px;
+    }
+
     .not-actual__box {
         grid-gap: 30px;
         -webkit-box-orient: vertical;
@@ -8910,6 +9307,10 @@ body {
 
     .not-found__img-2-mobile {
         display: block;
+    }
+
+    .map-filter {
+        top: 110px;
     }
 }
 
@@ -9273,6 +9674,42 @@ body {
         width: 100%;
         max-width: 513px;
     }
+
+    .map-filter__select {
+        width: 225px;
+    }
+
+    .map-filter__select .select__select {
+        width: 225px;
+    }
+
+    .map-filter__select .select__container {
+        width: 225px;
+    }
+
+    .map-filter__geo-btn {
+        width: 225px;
+    }
+
+    .map-filter__metro-btn {
+        width: 225px;
+    }
+
+    .map-filter__form-mkad {
+        width: 225px;
+    }
+
+    .map-filter__form-road {
+        width: 225px;
+    }
+
+    .map-filter__form-road .form-road__select {
+        width: 225px;
+    }
+
+    .map-filter__form-road .form-road__container {
+        width: 225px;
+    }
 }
 
 @media screen and (max-width: 359px) {
@@ -9303,10 +9740,6 @@ body {
     }
 
     .metro-popup__search {
-        max-width: 100%;
-    }
-
-    .map__search {
         max-width: 100%;
     }
 }

@@ -17,6 +17,57 @@
 </head>
 
 <body>
+    <div class="metro-popup">
+        <div class="metro-popup__bg"></div>
+        <div class="metro-popup__container"><img class="metro-popup__close" src="assets/images/plus.png" alt="" />
+            <div class="metro-popup__title">Выбор метро</div>
+            <div class="metro-popup__row">
+                <form class="metro-popup__search" action="" method="post"><input class="metro-popup__search-input" type="text" placeholder="Поиск станции" /><button class="metro-popup__search-btn"><img class="metro-popup__search-icon" src="assets/images/search.png" alt="" /></button></form>
+                <div class="metro-popup__checkboxes">
+                    <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="station-1" id="station-1" checked="checked" /><label class="checkbox-btn__label" for="station-1">Станции внутри кольца</label></div>
+                    <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="station-2" id="station-2" /><label class="checkbox-btn__label" for="station-2">Станции кольцевой</label></div>
+                    <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="station-3" id="station-3" /><label class="checkbox-btn__label" for="station-3">Менее 15 мин. пешком </label></div>
+                    <div class="checkbox-btn checkbox-crossing"><input class="checkbox-btn__input" type="checkbox" name="station-4" id="station-4" /><label class="checkbox-btn__label" for="station-4">crossing</label></div>
+                </div>
+            </div><img class="metro-popup__img" src="assets/images/metro.png" alt="" />
+            <div class="metro-popup__buttons"><button class="metro-popup__cancel">Сбросить</button><button class="metro-popup__btn">Смотреть 112 предложений</button></div>
+        </div>
+    </div>
+    <div class="geo-popup">
+        <div class="geo-popup__container"><img class="geo-popup__close" src="assets/images/plus.png" alt="" />
+            <div class="geo-popup__title">Выберите регион или город</div>
+            <form class="geo-popup__form" action="" method="post"><input class="geo-popup__input" type="text" placeholder="Введите регион или город" /><button class="geo-popup__btn"><img class="geo-popup__btn-icon" src="assets/images/search.png" alt="" /></button></form>
+            <form class="geo-popup__area-form" action="" method="post">
+                <div class="geo-popup__row">
+                    <div class="geo-popup__item">
+                        <div class="geo-popup__city">Москва</div>
+                        <div class="geo-popup__list">
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="city-area-1" id="city-area-1" /><label class="checkbox-btn__label" for="city-area-1">ЦАО</label></div>
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="city-area-2" id="city-area-2" /><label class="checkbox-btn__label" for="city-area-2">САО</label></div>
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="city-area-3" id="city-area-3" /><label class="checkbox-btn__label" for="city-area-3">ВАО</label></div>
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="city-area-4" id="city-area-4" /><label class="checkbox-btn__label" for="city-area-4">ЮВАО</label></div>
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="city-area-5" id="city-area-5" /><label class="checkbox-btn__label" for="city-area-5">ЮЗАО</label></div>
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="city-area-6" id="city-area-6" /><label class="checkbox-btn__label" for="city-area-6">ЗАО</label></div>
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="city-area-7" id="city-area-7" /><label class="checkbox-btn__label" for="city-area-7">СВАО</label></div>
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="city-area-8" id="city-area-8" /><label class="checkbox-btn__label" for="city-area-8">ЮАО</label></div>
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="city-area-9" id="city-area-9" /><label class="checkbox-btn__label" for="city-area-9">СЗАО</label></div>
+                        </div>
+                    </div>
+                    <div class="geo-popup__item">
+                        <div class="geo-popup__city">Московская область</div>
+                        <div class="geo-popup__list">
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="city-area-10" id="city-area-10" /><label class="checkbox-btn__label" for="city-area-10">С</label></div>
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="city-area-11" id="city-area-11" /><label class="checkbox-btn__label" for="city-area-11">СВ</label></div>
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="city-area-12" id="city-area-12" /><label class="checkbox-btn__label" for="city-area-12">СЗ</label></div>
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="city-area-13" id="city-area-13" /><label class="checkbox-btn__label" for="city-area-13">Ю</label></div>
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="city-area-14" id="city-area-14" /><label class="checkbox-btn__label" for="city-area-14">ЮВ</label></div>
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="city-area-15" id="city-area-15" /><label class="checkbox-btn__label" for="city-area-15">ЮЗ</label></div>
+                        </div>
+                    </div>
+                </div><button class="geo-popup__area-btn">Подобрать</button>
+            </form>
+        </div>
+    </div>
     <div class="popup-callback">
         <div class="popup-callback__container">
             <h2 class="h2 popup-callback__title">Заказ звонка</h2>
@@ -155,14 +206,46 @@
             <div class="map__container">
                 <div class="map__row">
                     <form class="map__search" action="" method="post"><input class="map__search-input" type="text" placeholder="Введите город, адрес, метро, название СК..." /><button class="map__search-btn"><img class="map__search-icon" src="assets/images/search.png" alt="" /></button></form>
-                    <div class="map__checkboxes">
-                        <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="station-1" id="station-1" checked="checked" /><label class="checkbox-btn__label" for="station-1">Все станции внутри кольца</label></div>
-                        <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="station-2" id="station-2" /><label class="checkbox-btn__label" for="station-2">Все станции кольцевой</label></div>
-                        <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="station-3" id="station-3" /><label class="checkbox-btn__label" for="station-3">Менее 15 мин. пешком </label></div>
-                        <div class="checkbox-btn checkbox-crossing"><input class="checkbox-btn__input" type="checkbox" name="station-4" id="station-4" /><label class="checkbox-btn__label" for="station-4"><img src="assets/images/crossing.png" alt="" /></label></div>
+                    <div class="map__fields">
+                        <div class="form-area map__area">
+                            <div class="form-area__label">Площадь</div>
+                            <div class="form-area__row">
+                                <div class="form-area__text">От</div><input class="form-area__input" type="text" name="from-area" placeholder="30" />
+                                <div class="form-area__sep"></div>
+                                <div class="form-area__text">До</div><input class="form-area__input" type="text" name="to-area" placeholder="3000" />
+                                <div class="form-area__text">м²</div>
+                            </div>
+                        </div>
+                        <div class="form-price map__price">
+                            <div class="form-price__label">Цена <span class="form-price__label--mobile">за м² в год</span></div>
+                            <div class="form-price__row">
+                                <div class="form-price__text">От</div><input class="form-price__input" type="text" name="from" placeholder="3000" />
+                                <div class="form-price__sep"></div>
+                                <div class="form-price__text">До</div><input class="form-price__input form-price__input--long" type="text" name="to" placeholder="30000000" />
+                                <div class="form-price__text form-price__text--size">₽</div>
+                            </div>
+                        </div>
+                        <div class="form-class map__class">
+                            <div class="form-class__label">Класс</div>
+                            <div class="checkbox-btn form-class__checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="class-1" id="class-1" checked="checked" /><label class="checkbox-btn__label" for="class-1">А</label></div>
+                            <div class="checkbox-btn form-class__checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="class-2" id="class-2" /><label class="checkbox-btn__label" for="class-2">В+</label></div>
+                            <div class="checkbox-btn form-class__checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="class-3" id="class-3" /><label class="checkbox-btn__label" for="class-3">В</label></div>
+                            <div class="checkbox-btn form-class__checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="class-4" id="class-4" /><label class="checkbox-btn__label" for="class-4">С</label></div>
+                        </div>
+                        <div class="filter-btn map__filter-btn"><img src="assets/images/crossing.png" alt="" /></div>
                     </div>
                 </div>
+                <div class="map__checkboxes">
+                    <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="param-1" id="param-1" checked="checked" /><label class="checkbox-btn__label" for="param-1">Тёплый</label></div>
+                    <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="param-2" id="param-2" /><label class="checkbox-btn__label" for="param-2">Холодильные камеры</label></div>
+                    <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="param-3" id="param-3" /><label class="checkbox-btn__label" for="param-3">Морозильные камеры</label></div>
+                    <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="param-4" id="param-4" /><label class="checkbox-btn__label" for="param-4">Мультитемпературный</label></div>
+                    <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="param-5" id="param-5" /><label class="checkbox-btn__label" for="param-5">Холодный</label></div>
+                    <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="param-6" id="param-6" /><label class="checkbox-btn__label" for="param-6">С офисом</label></div>
+                    <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="param-7" id="param-7" /><label class="checkbox-btn__label" for="param-7">Только 1й этаж</label></div>
+                </div>
                 <div class="map__map">
+                    <div class="filter-btn map__filter-btn"><img src="assets/images/crossing.png" alt="" /></div>
                     <div class="map-list">
                         <div class="map-list__row">
                             <div class="map-list__title">Объявления (<span class="map-list__count">5</span>)</div><img class="map-list__close" src="assets/images/plus.png" alt="" />
@@ -284,6 +367,233 @@
                         <div class="map-btn__text">Помощь</div>
                         <div class="map-btn__icon-wrap"><img class="map-btn__icon" src="assets/images/question.png" alt="" /></div>
                     </div>
+                </div>
+                <div class="map-filter">
+                    <div class="map-filter__fields">
+                        <div class="search-form map-filter__search-form">
+                            <form class="search-form__form" action="" method="post"><img class="search-form__icon" src="assets/images/search_gray.png" alt="" /><input class="search-form__input" type="text" placeholder="Это строка умного поиска. Введите город, адрес, метро, название СК..." /></form>
+                            <div class="search-form__result">
+                                <div class="item-hor"><img class="item-hor__delete" src="assets/images/delete.png" alt="" /><a class="item-hor__img-wrap" href=""><img class="item-hor__img" src="assets/images/items/1.png" alt="" />
+                                        <div class="item-hor__class">A</div>
+                                    </a>
+                                    <div class="item-hor__container">
+                                        <div class="item-hor__row"><img class="item-hor__icon" src="assets/images/address_green.png" alt="" />
+                                            <div class="item-hor__text">МО Щёлковское</div>
+                                        </div><a class="item-hor__name" href="">СК Лазурь на Новорязанке</a>
+                                        <div class="item-hor__row"><img class="item-hor__icon" src="assets/images/area.png" alt="" />
+                                            <div class="item-hor__text">От 1 000 до 1 160 м²</div>
+                                        </div>
+                                        <div class="item-hor__text">3 000₽ за м²/год</div>
+                                    </div>
+                                </div>
+                                <div class="item-hor"><img class="item-hor__delete" src="assets/images/delete.png" alt="" /><a class="item-hor__img-wrap" href=""><img class="item-hor__img" src="assets/images/items/1.png" alt="" />
+                                        <div class="item-hor__class">A</div>
+                                    </a>
+                                    <div class="item-hor__container">
+                                        <div class="item-hor__row"><img class="item-hor__icon" src="assets/images/address_green.png" alt="" />
+                                            <div class="item-hor__text">МО Щёлковское</div>
+                                        </div><a class="item-hor__name" href="">СК Лазурь на Новорязанке</a>
+                                        <div class="item-hor__row"><img class="item-hor__icon" src="assets/images/area.png" alt="" />
+                                            <div class="item-hor__text">От 1 000 до 1 160 м²</div>
+                                        </div>
+                                        <div class="item-hor__text">3 000₽ за м²/год</div>
+                                    </div>
+                                </div>
+                                <div class="item-hor"><img class="item-hor__delete" src="assets/images/delete.png" alt="" /><a class="item-hor__img-wrap" href=""><img class="item-hor__img" src="assets/images/items/1.png" alt="" />
+                                        <div class="item-hor__class">A</div>
+                                    </a>
+                                    <div class="item-hor__container">
+                                        <div class="item-hor__row"><img class="item-hor__icon" src="assets/images/address_green.png" alt="" />
+                                            <div class="item-hor__text">МО Щёлковское</div>
+                                        </div><a class="item-hor__name" href="">СК Лазурь на Новорязанке</a>
+                                        <div class="item-hor__row"><img class="item-hor__icon" src="assets/images/area.png" alt="" />
+                                            <div class="item-hor__text">От 1 000 до 1 160 м²</div>
+                                        </div>
+                                        <div class="item-hor__text">3 000₽ за м²/год</div>
+                                    </div>
+                                </div>
+                                <div class="item-hor"><img class="item-hor__delete" src="assets/images/delete.png" alt="" /><a class="item-hor__img-wrap" href=""><img class="item-hor__img" src="assets/images/items/1.png" alt="" />
+                                        <div class="item-hor__class">A</div>
+                                    </a>
+                                    <div class="item-hor__container">
+                                        <div class="item-hor__row"><img class="item-hor__icon" src="assets/images/address_green.png" alt="" />
+                                            <div class="item-hor__text">МО Щёлковское</div>
+                                        </div><a class="item-hor__name" href="">СК Лазурь на Новорязанке</a>
+                                        <div class="item-hor__row"><img class="item-hor__icon" src="assets/images/area.png" alt="" />
+                                            <div class="item-hor__text">От 1 000 до 1 160 м²</div>
+                                        </div>
+                                        <div class="item-hor__text">3 000₽ за м²/год</div>
+                                    </div>
+                                </div>
+                                <div class="item-hor"><img class="item-hor__delete" src="assets/images/delete.png" alt="" /><a class="item-hor__img-wrap" href=""><img class="item-hor__img" src="assets/images/items/1.png" alt="" />
+                                        <div class="item-hor__class">A</div>
+                                    </a>
+                                    <div class="item-hor__container">
+                                        <div class="item-hor__row"><img class="item-hor__icon" src="assets/images/address_green.png" alt="" />
+                                            <div class="item-hor__text">МО Щёлковское</div>
+                                        </div><a class="item-hor__name" href="">СК Лазурь на Новорязанке</a>
+                                        <div class="item-hor__row"><img class="item-hor__icon" src="assets/images/area.png" alt="" />
+                                            <div class="item-hor__text">От 1 000 до 1 160 м²</div>
+                                        </div>
+                                        <div class="item-hor__text">3 000₽ за м²/год</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-area map-filter__form-area">
+                            <div class="form-area__label">Площадь</div>
+                            <div class="form-area__row">
+                                <div class="form-area__text">От</div><input class="form-area__input" type="text" name="from-area" placeholder="30" />
+                                <div class="form-area__sep"></div>
+                                <div class="form-area__text">До</div><input class="form-area__input" type="text" name="to-area" placeholder="3000" />
+                                <div class="form-area__text">м²</div>
+                            </div>
+                        </div>
+                        <div class="form-price map-filter__form-price">
+                            <div class="form-price__label">Цена <span class="form-price__label--mobile">за м² в год</span></div>
+                            <div class="form-price__row">
+                                <div class="form-price__text">От</div><input class="form-price__input" type="text" name="from" placeholder="3000" />
+                                <div class="form-price__sep"></div>
+                                <div class="form-price__text">До</div><input class="form-price__input form-price__input--long" type="text" name="to" placeholder="30000000" />
+                                <div class="form-price__text form-price__text--size">₽</div>
+                            </div>
+                        </div>
+                        <div class="form-class map-filter__form-class">
+                            <div class="form-class__label">Класс</div>
+                            <div class="checkbox-btn form-class__checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="class-1" id="class-1" checked="checked" /><label class="checkbox-btn__label" for="class-1">А</label></div>
+                            <div class="checkbox-btn form-class__checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="class-2" id="class-2" /><label class="checkbox-btn__label" for="class-2">В+</label></div>
+                            <div class="checkbox-btn form-class__checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="class-3" id="class-3" /><label class="checkbox-btn__label" for="class-3">В</label></div>
+                            <div class="checkbox-btn form-class__checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="class-4" id="class-4" /><label class="checkbox-btn__label" for="class-4">С</label></div>
+                        </div>
+                        <div class="select map-filter__select">
+                            <div class="select__select-wrap"><select class="select__select" name="action">
+                                    <option>Снять</option>
+                                </select>
+                                <div class="select__select-overlay"></div>
+                            </div>
+                            <div class="select__container">
+                                <div class="select__item">Снять</div>
+                            </div>
+                        </div>
+                        <div class="select map-filter__select">
+                            <div class="select__select-wrap"><select class="select__select" name="room">
+                                    <option>Склад</option>
+                                </select>
+                                <div class="select__select-overlay"></div>
+                            </div>
+                            <div class="select__container">
+                                <div class="select__item">Склад</div>
+                            </div>
+                        </div><button class="geo-btn map-filter__geo-btn" type="button">География<img class="geo-btn__icon" src="assets/images/geo_icon.png" alt="" /></button><button class="metro-btn map-filter__metro-btn" type="button">Метро<img class="metro-btn__icon" src="assets/images/metro_icon.png" alt="" /></button>
+                        <div class="form-mkad map-filter__form-mkad">
+                            <div class="form-mkad__label">Расстояние от МКАД</div>
+                            <div class="form-mkad__row">
+                                <div class="form-mkad__text">От</div><input class="form-mkad__input" type="text" name="from-mkad" placeholder="5" />
+                                <div class="form-mkad__sep"></div>
+                                <div class="form-mkad__text">До</div><input class="form-mkad__input" type="text" name="to-mkad" placeholder="1000" />
+                                <div class="form-mkad__text">км</div>
+                            </div>
+                        </div>
+                        <div class="form-road map-filter__form-road">
+                            <div class="form-road__select-wrap"><select class="form-road__select" name="road">
+                                    <option>Шоссе</option>
+                                </select>
+                                <div class="form-road__select-overlay"></div>
+                            </div>
+                            <div class="form-road__container"><input class="form-road__input" type="text" placeholder="Поиск" />
+                                <div class="checkbox"><input class="checkbox__input" type="checkbox" name="road-1" id="road-1" /><label class="checkbox__label" for="road-1">Алтуфьевское</label></div>
+                                <div class="checkbox"><input class="checkbox__input" type="checkbox" name="road-2" id="road-2" /><label class="checkbox__label" for="road-2">Боровское</label></div>
+                                <div class="checkbox"><input class="checkbox__input" type="checkbox" name="road-3" id="road-3" /><label class="checkbox__label" for="road-3">Варшавское</label></div>
+                                <div class="checkbox"><input class="checkbox__input" type="checkbox" name="road-4" id="road-4" /><label class="checkbox__label" for="road-4">Волоколамское</label></div>
+                                <div class="checkbox"><input class="checkbox__input" type="checkbox" name="road-5" id="road-5" /><label class="checkbox__label" for="road-5">Горьковское</label></div>
+                                <div class="checkbox"><input class="checkbox__input" type="checkbox" name="road-6" id="road-6" /><label class="checkbox__label" for="road-6">Дзержинское</label></div>
+                                <div class="checkbox"><input class="checkbox__input" type="checkbox" name="road-7" id="road-7" /><label class="checkbox__label" for="road-7">Дмитровское</label></div>
+                                <div class="checkbox"><input class="checkbox__input" type="checkbox" name="road-8" id="road-8" /><label class="checkbox__label" for="road-8">Егорьевское</label></div>
+                                <div class="checkbox"><input class="checkbox__input" type="checkbox" name="road-9" id="road-9" /><label class="checkbox__label" for="road-9">Калужское</label></div>
+                                <div class="checkbox"><input class="checkbox__input" type="checkbox" name="road-10" id="road-10" /><label class="checkbox__label" for="road-10">Каширское</label></div>
+                                <div class="checkbox"><input class="checkbox__input" type="checkbox" name="road-11" id="road-11" /><label class="checkbox__label" for="road-11">Киевское</label></div>
+                                <div class="checkbox"><input class="checkbox__input" type="checkbox" name="road-12" id="road-12" /><label class="checkbox__label" for="road-12">Ленинградское</label></div>
+                                <div class="checkbox"><input class="checkbox__input" type="checkbox" name="road-13" id="road-13" /><label class="checkbox__label" for="road-13">Минское</label></div>
+                                <div class="checkbox"><input class="checkbox__input" type="checkbox" name="road-14" id="road-14" /><label class="checkbox__label" for="road-14">Можайское</label></div>
+                                <div class="checkbox"><input class="checkbox__input" type="checkbox" name="road-15" id="road-15" /><label class="checkbox__label" for="road-15">Новорижское</label></div>
+                                <div class="checkbox"><input class="checkbox__input" type="checkbox" name="road-16" id="road-16" /><label class="checkbox__label" for="road-16">Новорязанское</label></div>
+                                <div class="checkbox"><input class="checkbox__input" type="checkbox" name="road-17" id="road-17" /><label class="checkbox__label" for="road-17">Носовихинское</label></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-filter__checkboxes map-filter__checkboxes--mobile">
+                        <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="param-1" id="param-1" checked="checked" /><label class="checkbox-btn__label" for="param-1">Тёплый</label></div>
+                        <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="param-2" id="param-2" /><label class="checkbox-btn__label" for="param-2">Холодильные камеры</label></div>
+                        <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="param-3" id="param-3" /><label class="checkbox-btn__label" for="param-3">Морозильные камеры</label></div>
+                        <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="param-4" id="param-4" /><label class="checkbox-btn__label" for="param-4">Мультитемпературный</label></div>
+                        <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="param-5" id="param-5" /><label class="checkbox-btn__label" for="param-5">Холодный</label></div>
+                        <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="param-6" id="param-6" /><label class="checkbox-btn__label" for="param-6">С офисом</label></div>
+                        <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="param-7" id="param-7" /><label class="checkbox-btn__label" for="param-7">Только 1й этаж</label></div>
+                    </div>
+                    <div class="map-filter__more">Все параметры<img class="map-filter__more-icon" src="assets/images/arrow_down_green.png" alt="" /></div>
+                    <div class="map-filter__more-params">
+                        <div class="map-filter__fields">
+                            <div class="select catalog-form__select">
+                                <div class="select__select-wrap"><select class="select__select" name="racks">
+                                        <option>Стелажи</option>
+                                    </select>
+                                    <div class="select__select-overlay"></div>
+                                </div>
+                                <div class="select__container">
+                                    <div class="select__item">Стелажи</div>
+                                </div>
+                            </div>
+                            <div class="form-input">
+                                <div class="form-input__label">Высота потолков</div>
+                                <div class="form-input__from">От</div><input class="form-input__input" type="text" name="ceil-height" placeholder="2" />
+                                <div class="form-input__unit">м²</div>
+                            </div>
+                            <div class="form-input">
+                                <div class="form-input__label">Нагрузка на пол</div>
+                                <div class="form-input__from">От</div><input class="form-input__input" type="text" name="floor-load" placeholder="2" />
+                                <div class="form-input__unit">м²</div>
+                            </div>
+                            <div class="form-input">
+                                <div class="form-input__label">Количество ворот</div>
+                                <div class="form-input__from">От</div><input class="form-input__input" type="text" name="gate-count" placeholder="2" />
+                                <div class="form-input__unit">шт.</div>
+                            </div>
+                            <div class="select catalog-form__select">
+                                <div class="select__select-wrap"><select class="select__select" name="gate-type">
+                                        <option>Тип ворот</option>
+                                    </select>
+                                    <div class="select__select-overlay"></div>
+                                </div>
+                                <div class="select__container">
+                                    <div class="select__item">Тип ворот</div>
+                                </div>
+                            </div>
+                            <div class="form-input">
+                                <div class="form-input__label">Мощность</div>
+                                <div class="form-input__from">От</div><input class="form-input__input" type="text" name="power" placeholder="2" />
+                                <div class="form-input__unit">кВт</div>
+                            </div>
+                            <div class="select catalog-form__select">
+                                <div class="select__select-wrap"><select class="select__select" name="tax">
+                                        <option>Налогообложение</option>
+                                    </select>
+                                    <div class="select__select-overlay"></div>
+                                </div>
+                                <div class="select__container">
+                                    <div class="select__item">Налогообложение</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="map-filter__checkboxes">
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="param-8" id="param-8" /><label class="checkbox-btn__label" for="param-8">Ж/Д ветка</label></div>
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="param-9" id="param-9" /><label class="checkbox-btn__label" for="param-9">Кран-балка</label></div>
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="param-10" id="param-10" /><label class="checkbox-btn__label" for="param-10">Мостовой кран</label></div>
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="param-11" id="param-11" /><label class="checkbox-btn__label" for="param-11">Козловой кран</label></div>
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="param-12" id="param-12" /><label class="checkbox-btn__label" for="param-12">Ж/Д кран</label></div>
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="param-13" id="param-13" /><label class="checkbox-btn__label" for="param-13">Тельфер</label></div>
+                            <div class="checkbox-btn"><input class="checkbox-btn__input" type="checkbox" name="param-14" id="param-14" /><label class="checkbox-btn__label" for="param-14">Кран</label></div>
+                        </div>
+                    </div><button class="map-filter__btn">Подобрать</button>
                 </div>
             </div>
         </div>

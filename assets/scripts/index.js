@@ -256,6 +256,16 @@
         var _blocks_search_form_search_form_js__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(24);
         /* harmony import */
         var _blocks_search_form_search_form_js__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/ __webpack_require__.n(_blocks_search_form_search_form_js__WEBPACK_IMPORTED_MODULE_23__);
+        /* harmony import */
+        var _blocks_map_filter_map_filter_js__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(25);
+        /* harmony import */
+        var _blocks_map_filter_map_filter_js__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/ __webpack_require__.n(_blocks_map_filter_map_filter_js__WEBPACK_IMPORTED_MODULE_24__);
+        /* harmony import */
+        var _blocks_filter_btn_filter_btn_js__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(26);
+        /* harmony import */
+        var _blocks_filter_btn_filter_btn_js__WEBPACK_IMPORTED_MODULE_25___default = /*#__PURE__*/ __webpack_require__.n(_blocks_filter_btn_filter_btn_js__WEBPACK_IMPORTED_MODULE_25__);
+
+
 
 
 
@@ -846,6 +856,37 @@
             });
             $('.search-form__input').on('blur', function() {
                 $('.search-form__result').hide();
+            });
+        });
+
+        /***/
+    }),
+    /* 25 */
+    /***/
+    (function(module, exports) {
+
+        jQuery(document).ready(function($) {
+            $('.map-filter__more').on('click', function() {
+                $('.map-filter__more-params').toggle(200);
+            });
+        });
+
+        /***/
+    }),
+    /* 26 */
+    /***/
+    (function(module, exports) {
+
+        jQuery(document).ready(function($) {
+            $('.filter-btn').on('click', function() {
+                $('.map-filter').toggle(200);
+                $(this).toggleClass('active');
+            });
+            $('html, body').on('click', function() {
+                $('.filter-btn').removeClass('active');
+                $('.map-filter').hide();
+            }).on('click', '.map-filter, .filter-btn', function(e) {
+                e.stopPropagation();
             });
         });
 
