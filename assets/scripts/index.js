@@ -422,7 +422,7 @@
             $('.form-road__select-wrap').on('click', function() {
                 showContainer($(this));
             });
-            $('html, body').on('click', function() {
+            $('html, body, .map-filter').on('click', function() {
                 $('.form-road__container').hide();
                 $('.form-road__select').removeClass('active');
                 changeSelectText();
@@ -488,7 +488,7 @@
                 $(this).parent().hide();
                 $(this).parents('.select').find('.select__select').removeClass('active');
             });
-            $('html, body').on('click', function() {
+            $('html, body, .map-filter').on('click', function() {
                 $('.select__container').hide();
                 $('.select__select').removeClass('active');
             }).on('click', '.select', function(e) {
